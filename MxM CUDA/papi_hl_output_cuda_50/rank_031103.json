@@ -1,0 +1,46 @@
+{
+  "papi_version":"7.2.0.0",
+  "cpu_info":"Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "max_cpu_rate_mhz":"2208",
+  "min_cpu_rate_mhz":"2208",
+  "event_definitions":{
+    "PAPI_TOT_CYC":{
+      "component":"perf_event",
+      "type":"delta"
+    }
+  },
+  "threads":{
+    "0":{
+      "regions":{
+        "0":{
+          "name":"program",
+          "parent_region_id":"-1",
+          "cycles":"2568509007",
+          "real_time_nsec":"1046939940",
+          "PAPI_TOT_CYC":"2403407231"
+        },
+        "1":{
+          "name":"initialization",
+          "parent_region_id":"0",
+          "cycles":"1136749705",
+          "real_time_nsec":"463353660",
+          "PAPI_TOT_CYC":"67390029"
+        },
+        "2":{
+          "name":"computation",
+          "parent_region_id":"0",
+          "cycles":"1422294994",
+          "real_time_nsec":"579738420",
+          "PAPI_TOT_CYC":"2330491546"
+        },
+        "3":{
+          "name":"end",
+          "parent_region_id":"0",
+          "cycles":"9400938",
+          "real_time_nsec":"3835980",
+          "PAPI_TOT_CYC":"5464759"
+        }
+      }
+    }
+  }
+}
